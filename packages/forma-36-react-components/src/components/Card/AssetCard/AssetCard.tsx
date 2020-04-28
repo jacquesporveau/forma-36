@@ -138,12 +138,10 @@ export class AssetCard extends Component<AssetCardProps> {
       isLoading,
       dropdownListElements,
       isDragActive,
-      testId,
       size,
       cardDragHandleProps,
       cardDragHandleComponent,
       withDragHandle,
-      href,
       ...otherProps
     } = this.props;
 
@@ -161,8 +159,6 @@ export class AssetCard extends Component<AssetCardProps> {
         className={classNames}
         padding="none"
         title={title}
-        testId={testId}
-        href={href}
         {...otherProps}
       >
         {isLoading ? (
