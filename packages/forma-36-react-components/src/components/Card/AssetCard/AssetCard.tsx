@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import cn from 'classnames';
-import Card from '../Card';
+import Card, { CardPropTypes } from '../Card';
 import CardActions from './../CardActions';
 import Asset from '../../Asset';
 import { AssetType } from '../../Asset';
@@ -66,7 +66,7 @@ export type AssetCardProps = {
   size?: 'small' | 'default';
 
   href?: string;
-} & typeof defaultProps;
+} & CardPropTypes & typeof defaultProps;
 
 const defaultProps = {
   isLoading: false,
