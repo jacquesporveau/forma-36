@@ -37,10 +37,6 @@ export type AssetCardProps = {
    */
   status?: AssetState;
   /**
-   * An ID used for testing purposes applied as a data attribute (data-test-id)
-   */
-  testId?: string;
-  /**
    * The type of asset being represented
    */
   type?: AssetType;
@@ -64,8 +60,6 @@ export type AssetCardProps = {
    * Renders a small variant of the card which accommodates a 150x150px image
    */
   size?: 'small' | 'default';
-
-  href?: string;
 } & CardPropTypes & typeof defaultProps;
 
 const defaultProps = {
